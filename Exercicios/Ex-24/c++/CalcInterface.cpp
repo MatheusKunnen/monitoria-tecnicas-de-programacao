@@ -1,7 +1,7 @@
 #include "CalcInterface.hpp"
 
 // Inicializamos o vetor com as operacoes válidas
-const vector<char> CalcInterface::OPERACOES_VALIDAS = vector<char>({'+', '-', '*', '/'});
+const vector<char> CalcInterface::OPERACOES_VALIDAS = vector<char>({'+', '-', '*', '/', 's'});
 
 CalcInterface::CalcInterface(){
 
