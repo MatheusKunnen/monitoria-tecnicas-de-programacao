@@ -44,9 +44,13 @@ int main()
   cout << "Litros restantes na Ferrari: " << sobra << endl;
 
   // Informando os atributos do exercício
-  cout << "Tamanho do Spoiler na Ferrari:: " << ferrari.getTamSpoiler() << endl
-       << "Número de Adesivos Tuning na Ferrari:: " << ferrari.getNumAdesivosTuning() << endl
-       << "Potência Extra do Turbo na Ferrari:: " << ferrari.getPotExtTurbo() << endl; 
+  cout << "Tamanho do Spoiler na Ferrari: " << ferrari.getTamSpoiler() << endl
+       << "Número de Adesivos Tuning na Ferrari: " << ferrari.getNumAdesivosTuning() << endl
+       << "Potência Extra do Turbo na Ferrari: " << ferrari.getPotExtTurbo() << endl;
+        
+  // Acelerando para verificar quanto de combustível é perdido
+  ferrari.acelerar();
+  cout << "Litros restantes na Ferrari: " << ferrari.getCombustivel() << endl;
 
   return 0;
 }

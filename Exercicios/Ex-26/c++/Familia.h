@@ -9,7 +9,7 @@ class Pessoa;
 class Familia {
 private:
     Pessoa* pPrincipal;
-    Pessoa* pConjuje;
+    Pessoa* pConjuge;
     vector<Pessoa*> listaFilhos;
     string sobrenome;
 
@@ -22,5 +22,5 @@ public:
     void listarArvoreFamiliar();
     void adicionarFilho(Pessoa* pFilho);
     void setPrincipal(Pessoa* p);
-    void setConjuje(Pessoa* p);
+    void setConjuge(Pessoa* p);
 };

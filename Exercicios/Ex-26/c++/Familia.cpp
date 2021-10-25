@@ -27,9 +27,9 @@ void Familia::listarArvoreFamiliar() {
     else
         cout << "Não definido" << endl;
 
-    cout << "Conjuje: ";
-    if (pConjuje != NULL)
-        cout << pConjuje->getNomeCompleto() << endl;
+    cout << "Conjuge: ";
+    if (pConjuge != NULL)
+        cout << pConjuge->getNomeCompleto() << endl;
     else
         cout << "Não definido" << endl;
 
@@ -51,13 +51,13 @@ void Familia::adicionarFilho(Pessoa* pFilho) {
 
     pFilho->setFamilia(this);
     pFilho->setMae(pPrincipal);
-    pFilho->setPai(pConjuje);
+    pFilho->setPai(pConjuge);
 
     if (pPrincipal)
         pPrincipal->adicionarFilho(pFilho);
 
-    if (pConjuje)
-        pConjuje->adicionarFilho(pFilho);
+    if (pConjuge)
+        pConjuge->adicionarFilho(pFilho);
 }
 
 void Familia::setPrincipal(Pessoa* p) {
@@ -65,7 +65,7 @@ void Familia::setPrincipal(Pessoa* p) {
     p->setFamilia(this);
 }
 
-void Familia::setConjuje(Pessoa* p) {
-    pConjuje = p;
+void Familia::setConjuge(Pessoa* p) {
+    pConjuge = p;
     p->setFamilia(this);
 }

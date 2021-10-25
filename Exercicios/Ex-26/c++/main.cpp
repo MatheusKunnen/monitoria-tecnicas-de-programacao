@@ -9,7 +9,7 @@ int main() {
     Pessoa mae("Maria Giovanni");
 
     Familia jhonson("Jhonson");
-    jhonson.setConjuje(&pai);
+    jhonson.setConjuge(&pai);
     jhonson.setPrincipal(&mae);
     jhonson.adicionarFilho(&filho1);
     jhonson.adicionarFilho(&filho2);
