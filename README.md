@@ -7,3 +7,6 @@ Neste repositorio encontram-se os gabaritos da lista general de exercícios, da 
 - Matheus Kunnen Ledesma
 - Augusto Mudrei Correia
 - Lucas Butschkau Vidal
+- Matheus Augusto Burda
+- Rogério Slabiski Melo
+- Daniel Augusto Pires de Castro
