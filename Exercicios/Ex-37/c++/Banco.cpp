@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* Atributo static, sendo inicializado fora da classe */
 int Banco::idConta = 0;
 
 #define CLEAR "clear" // Mudar para "cls" no windows
@@ -15,6 +16,7 @@ Banco::Banco() {
 }
 
 Banco::~Banco() {
+    /* Deleta todas as contas existentes */
     Conta* pAux = NULL;
     for (int i = 0; i < contas.size(); i++) {
         pAux = static_cast<Conta*>(contas[i]);
