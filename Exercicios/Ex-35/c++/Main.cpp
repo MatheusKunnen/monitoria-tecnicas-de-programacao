@@ -46,6 +46,7 @@ int main()
         if(ptrEmpregado != nullptr) {
             ptrEmpregado->mostraDados();
             cout << "Salario: R$ " << ptrEmpregado->calculaSalario(horaTrabalhada) << endl;
+            delete(ptrEmpregado);
         }
         else{
             cout << "Nao foi possivel criar o funcionario!" << endl;
