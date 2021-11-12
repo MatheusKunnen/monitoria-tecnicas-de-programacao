@@ -1,0 +1,24 @@
+#pragma once
+
+#include <iostream>
+#include <string>
+
+using std::cout;
+using std::endl;
+using std::string;
+
+class Pessoa {
+protected:
+    string nome;
+    int idade;
+    static unsigned int quantidadePessoas;
+
+public:
+    Pessoa(string nome = "Sem Nome", int idade = -1);
+    ~Pessoa();
+
+    virtual void mostraDados() const;
+    void setNome(string nome);
+    void setIdade(int idade);
+    void mostraQuantidadePessoas() const;
+};
