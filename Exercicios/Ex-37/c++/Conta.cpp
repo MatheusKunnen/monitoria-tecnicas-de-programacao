@@ -1,7 +1,8 @@
 #include "Conta.h"
 
 Conta::Conta(int id) :
-conta(id) { }
+conta(id),
+saldo(0) { }
 
 Conta::~Conta() {
 }

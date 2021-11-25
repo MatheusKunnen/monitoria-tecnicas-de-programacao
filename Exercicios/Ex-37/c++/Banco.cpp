@@ -9,7 +9,7 @@
 /* Atributo static, sendo inicializado fora da classe */
 int Banco::idConta = 0;
 
-#define CLEAR "clear" // Mudar para "cls" no windows
+#define CLEAR "cls" // Mudar para "cls" no windows
 
 Banco::Banco() {
     exec();
